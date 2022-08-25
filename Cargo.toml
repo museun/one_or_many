@@ -1,0 +1,14 @@
+[package]
+name        = "one_or_many"
+version     = "0.1.0"
+edition     = "2021"
+author      = "museun"
+license     = "0BSD"
+description = "a type that stores 0, 1 or many instances of a type"
+repository  = "https://github.com/museun/one_or_many"
+
+[dependencies]
+serde = { version = "1.0.144", features = ["derive"], optional = true }
+
+[features]
+serde = ["dep:serde"]
